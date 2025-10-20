@@ -1,0 +1,14 @@
+| **Command**                                             | **Purpose / Description**            | **Example Usage**                                      |
+| ------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------ |
+| `kubectl version --client`                              | Show kubectl client version          | `kubectl version --client`                             |
+| `kubectl cluster-info`                                  | Show cluster control plane info      | `kubectl cluster-info`                                 |
+| `kubectl get nodes`                                     | List all nodes                       | `kubectl get nodes`                                    |
+| `kubectl get pods`                                      | List pods in current namespace       | `kubectl get pods`                                     |
+| `kubectl get all`                                       | List all resources                   | `kubectl get all`                                      |
+| `kubectl get all -A`                                    | List all resources across namespaces | `kubectl get all -A`                                   |
+| `kubectl get namespaces`                                | List namespaces                      | `kubectl get namespaces`                               |
+| `kubectl create namespace <ns>`                         | Create new namespace                 | `kubectl create namespace dev`                         |
+| `kubectl config set-context --current --namespace=<ns>` | Switch namespace                     | `kubectl config set-context --current --namespace=dev` |
+| `kubectl describe <resource> <name>`                    | Show detailed info                   | `kubectl describe pod nginx-pod`                       |
+| `kubectl delete pod <pod>`                              | Delete pod                           | `kubectl delete pod mypod`                             |
+| `kubectl get pods -o wide`                              | List pods with IP/node info          | `kubectl get pods -o wide`                             |

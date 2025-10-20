@@ -1,0 +1,9 @@
+| **Command**                                                | **Purpose / Description**   | **Example Usage**                                          |
+| ---------------------------------------------------------- | --------------------------- | ---------------------------------------------------------- |
+| `kubectl logs <pod>`                                       | View pod logs               | `kubectl logs mypod`                                       |
+| `kubectl logs <pod> -c <container>`                        | Logs of specific container  | `kubectl logs nginx-pod -c web`                            |
+| `kubectl exec -it <pod> -- /bin/bash`                      | Enter running container     | `kubectl exec -it nginx-pod -- /bin/bash`                  |
+| `kubectl top pod`                                          | Show pod CPU & memory usage | `kubectl top pod`                                          |
+| `kubectl top node`                                         | Show node resource usage    | `kubectl top node`                                         |
+| `kubectl get events --sort-by=.metadata.creationTimestamp` | View events in order        | `kubectl get events --sort-by=.metadata.creationTimestamp` |
+| `kubectl delete pod <pod> --force --grace-period=0`        | Force delete stuck pod      | `kubectl delete pod mypod --force --grace-period=0`        |

@@ -1,0 +1,10 @@
+| **Command**                            | **Purpose / Description** | **Example Usage**                     |
+| -------------------------------------- | ------------------------- | ------------------------------------- |
+| `kubectl config get-contexts`          | List contexts             | `kubectl config get-contexts`         |
+| `kubectl config use-context <context>` | Switch context            | `kubectl config use-context minikube` |
+| `kubectl config view`                  | Show kubeconfig details   | `kubectl config view`                 |
+| `minikube start`                       | Start Minikube cluster    | `minikube start --driver=docker`      |
+| `minikube stop`                        | Stop Minikube cluster     | `minikube stop`                       |
+| `minikube delete`                      | Delete cluster            | `minikube delete`                     |
+| `minikube dashboard`                   | Launch dashboard          | `minikube dashboard`                  |
+| `kubectl get componentstatuses`        | Check cluster health      | `kubectl get componentstatuses`       |

@@ -1,0 +1,7 @@
+| **Command**                                                                   | **Purpose / Description**   | **Example Usage**                                                                      |
+| ----------------------------------------------------------------------------- | --------------------------- | -------------------------------------------------------------------------------------- |
+| `kubectl create serviceaccount <name>`                                        | Create service account      | `kubectl create serviceaccount dev-user`                                               |
+| `kubectl get serviceaccounts`                                                 | List service accounts       | `kubectl get serviceaccounts`                                                          |
+| `kubectl create role <name> --verb=<verbs> --resource=<res>`                  | Create Role                 | `kubectl create role pod-reader --verb=get,list --resource=pods`                       |
+| `kubectl create rolebinding <name> --role=<role> --serviceaccount=<ns>:<acc>` | Bind Role to ServiceAccount | `kubectl create rolebinding read-pods --role=pod-reader --serviceaccount=dev:dev-user` |
+| `kubectl get roles,rolebindings`                                              | List roles and bindings     | `kubectl get roles,rolebindings`                                                       |

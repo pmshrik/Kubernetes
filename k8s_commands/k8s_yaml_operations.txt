@@ -1,0 +1,8 @@
+| **Command**                      | **Purpose / Description**     | **Example Usage**                  |
+| -------------------------------- | ----------------------------- | ---------------------------------- |
+| `kubectl apply -f <file>.yaml`   | Apply a YAML config           | `kubectl apply -f deployment.yaml` |
+| `kubectl delete -f <file>.yaml`  | Delete resources from YAML    | `kubectl delete -f service.yaml`   |
+| `kubectl diff -f <file>.yaml`    | Show pending changes          | `kubectl diff -f deployment.yaml`  |
+| `kubectl explain <resource>`     | Show YAML field documentation | `kubectl explain pod`              |
+| `kubectl get <resource> -o yaml` | Output resource YAML          | `kubectl get pod nginx -o yaml`    |
+| `kubectl create -f <file>.yaml`  | Create resource from YAML     | `kubectl create -f config.yaml`    |

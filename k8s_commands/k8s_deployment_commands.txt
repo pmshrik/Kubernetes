@@ -1,0 +1,10 @@
+| **Command**                                                   | **Purpose / Description**    | **Example Usage**                                     |
+| ------------------------------------------------------------- | ---------------------------- | ----------------------------------------------------- |
+| `kubectl create deployment <name> --image=<image>`            | Create deployment            | `kubectl create deployment nginx --image=nginx`       |
+| `kubectl get deployments`                                     | List all deployments         | `kubectl get deployments`                             |
+| `kubectl describe deployment <name>`                          | Describe deployment details  | `kubectl describe deployment nginx`                   |
+| `kubectl delete deployment <name>`                            | Delete deployment            | `kubectl delete deployment nginx`                     |
+| `kubectl scale deployment <name> --replicas=<num>`            | Scale replicas               | `kubectl scale deployment nginx --replicas=3`         |
+| `kubectl rollout status deployment/<name>`                    | Check rollout status         | `kubectl rollout status deployment/nginx`             |
+| `kubectl rollout undo deployment/<name>`                      | Rollback to previous version | `kubectl rollout undo deployment/nginx`               |
+| `kubectl set image deployment/<name> <container>=<new_image>` | Update image                 | `kubectl set image deployment/nginx nginx=nginx:1.25` |

@@ -1,0 +1,9 @@
+| **Command**                                                    | **Purpose / Description**          | **Example Usage**                                           |
+| -------------------------------------------------------------- | ---------------------------------- | ----------------------------------------------------------- |
+| `kubectl expose deployment <name> --type=<type> --port=<port>` | Expose deployment as service       | `kubectl expose deployment nginx --type=NodePort --port=80` |
+| `kubectl get svc`                                              | List all services                  | `kubectl get svc`                                           |
+| `kubectl describe svc <svc>`                                   | Describe a service                 | `kubectl describe svc nginx-service`                        |
+| `kubectl delete svc <svc>`                                     | Delete a service                   | `kubectl delete svc nginx-service`                          |
+| `kubectl get endpoints`                                        | List service endpoints             | `kubectl get endpoints`                                     |
+| `kubectl port-forward <pod> <local_port>:<pod_port>`           | Forward local port to pod          | `kubectl port-forward nginx-pod 8080:80`                    |
+| `minikube service <svc>`                                       | Open service in browser (Minikube) | `minikube service nginx-service`                            |

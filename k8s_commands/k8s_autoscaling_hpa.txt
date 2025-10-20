@@ -1,0 +1,5 @@
+| **Command**                                                                       | **Purpose / Description**       | **Example Usage**                                                     |
+| --------------------------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- |
+| `kubectl scale deployment <name> --replicas=<num>`                                | Scale pods manually             | `kubectl scale deployment nginx --replicas=4`                         |
+| `kubectl autoscale deployment <name> --min=<min> --max=<max> --cpu-percent=<cpu>` | Enable autoscaling              | `kubectl autoscale deployment nginx --min=1 --max=5 --cpu-percent=80` |
+| `kubectl get hpa`                                                                 | List Horizontal Pod Autoscalers | `kubectl get hpa`                                                     |
