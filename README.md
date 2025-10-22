@@ -1,6 +1,6 @@
 # Kubernetes 
 
-This README is a comprehensive guide for "Kubernetes in One Shot." It contains categorized commands from your history, structured by core Kubernetes topics. Each command is briefly described for ease of understanding and use.
+This README is a comprehensive guide for "Kubernetes all topics." It contains categorized commands from your history, structured by core Kubernetes topics. Each command is briefly described for ease of understanding and use.
 
 ---
 
